@@ -1,0 +1,24 @@
+{
+  "name": "go-channels",
+  "version": "0.0.1",
+  "main": "./dist",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start-job": "NODE_ENV=development nodemon --exec ts-node ./src/sandbox/test-job.ts",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "clean": "rimraf dist",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "precommit": "lint-staged && yarn build"
+  },
+  "dependencies": {
+    "tslib": "^1.9.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.3.3333"
+  }
+}

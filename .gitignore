@@ -1,0 +1,9 @@
+# dependencies
+**/node_modules
+
+# build
+**/dist
+lerna-debug.log
+
+# misc
+**/.DS_Store
